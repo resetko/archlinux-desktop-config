@@ -17,3 +17,4 @@ tar -xzvf yaourt.tar.gz
 cd yaourt
 makepkg -sri
 
+sudo yaourt -S i3 rofi
