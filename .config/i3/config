@@ -146,6 +146,7 @@ bindsym $mod+r mode "resize"
 bindsym $mod+x [urgent=latest] focus
 bindsym $mod+c exec zenity --calendar
 bindsym $mod+l exec i3lock
+bindsym --release $mod+Print exec escrotum -s '~/Screenshots/%Y-%m-%d-%H%M%S_$wx$h_escrotum.png'
 
 focus_follows_mouse no
 
