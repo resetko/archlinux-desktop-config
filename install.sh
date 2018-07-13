@@ -1,8 +1,12 @@
 #!/bin/bash
+
+#
+# @todo separate into smaller scripts
+#
+
+
 TMP_PATH=/tmp/preinittpm
 CURRENT_PATH="$( cd `dirname "$0"` && pwd)"
-
-# @todo install zsh, copy zshrc for root and current user and replace theme name
 
 # installing base packages
 sudo pacman -Sy --needed --noconfirm base-devel wget gvim
@@ -31,8 +35,9 @@ mkdir -p $HOME/.yaourt-tmp
 
 
 mkdir -p $HOME/Screenshots
+mkdir -p $HOME/.wallpapers
 
-yaourt -S --needed --noconfirm xdg-user-dirs i3 rofi i3blocks zenity escrotum-git google-chrome numix-icon-theme-git numix-circle-icon-theme-git numix-themes-archblue-git xorg-server xorg-apps lightdm lightdm-gtk-greeter xfce4 xfce4-goodies gtk-engine-murrine ttf-dejavu ttf-google-fonts-git oh-my-zsh-git openssh
+yaourt -S --needed --noconfirm xdg-user-dirs i3 rofi i3blocks zenity escrotum-git google-chrome numix-icon-theme-git numix-circle-icon-theme-git numix-themes-archblue-git xorg-server xorg-apps lightdm lightdm-gtk-greeter xfce4 xfce4-goodies gtk-engine-murrine ttf-dejavu ttf-google-fonts-git oh-my-zsh-git openssh ttf-font-awesome terminus-font
 
 sudo sed -i s/#greeter-session=example-gtk-gnome/greeter-session=lightdm-gtk-greeter/g /etc/lightdm/lightdm.conf
 
