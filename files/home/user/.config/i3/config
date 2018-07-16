@@ -132,7 +132,7 @@ bindsym --release $mod+Print exec escrotum -s '~/Screenshots/%Y-%m-%d-%H%M%S_$wx
 focus_follows_mouse no
 
 # Startup
-exec nitrogen --set-auto --set-color=#123123 --random $HOME/.wallpapers
+exec nitrogen --set-auto --set-color="#123123" --random $HOME/.wallpapers
 exec compton -b
 
 # Start i3bar to display a workspace bar (plus the system information i3status
