@@ -21,10 +21,7 @@ sudo sed -i s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"gentoo\"/g /usr/share/oh-my
 sudo cp /usr/share/oh-my-zsh/zshrc /root/.zshrc
 cp /usr/share/oh-my-zsh/zshrc $HOME/.zshrc
 
-cp -r $HOME_FILES_PATH/.config $HOME/
-cp $HOME_FILES_PATH/.Xresources $HOME/
-cp $HOME_FILES_PATH/.gtkrc-2.0 $HOME/
-
-
 sudo cp -r $FILES_PATH/usr /
 sudo cp -r $FILES_PATH/etc /
+
+cp -r $FILES_PATH/home/user/. $HOME/
