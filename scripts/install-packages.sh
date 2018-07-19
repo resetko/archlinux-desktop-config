@@ -11,6 +11,7 @@ yaourt -S --needed --noconfirm \
     i3blocks-git \
     lightdm \
     lightdm-gtk-greeter \
+    nitrogen \
     numix-circle-icon-theme-git \
     numix-icon-theme-git \
     numix-themes-archblue \
