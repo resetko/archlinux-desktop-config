@@ -3,20 +3,19 @@ source ./scripts/constants.sh
 echo "Installing packages"
 
 yaourt -S --needed --noconfirm \
-    compton-git \
-    escrotum-git \
+    flameshot \
     google-chrome \
     gtk-engine-murrine \
     i3-git \
-    i3blocks-git \
     lightdm \
     lightdm-gtk-greeter \
     nitrogen \
     numix-circle-icon-theme-git \
+    numix-gtk-theme \
     numix-icon-theme-git \
-    numix-themes-archblue \
     oh-my-zsh-git \
     openssh \
+    picom-git \
     rofi \
     terminus-font \
     ttf-dejavu \
