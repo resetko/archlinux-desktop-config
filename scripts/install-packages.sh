@@ -2,7 +2,7 @@ source ./scripts/constants.sh
 
 echo "Installing packages"
 
-yaourt -S --needed --noconfirm \
+yay -S --needed --noconfirm \
     flameshot \
     google-chrome \
     gtk-engine-murrine \
