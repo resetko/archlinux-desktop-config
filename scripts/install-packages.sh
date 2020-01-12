@@ -16,8 +16,10 @@ yay -S --needed --noconfirm \
     oh-my-zsh-git \
     openssh \
     picom-git \
+    polybar-git \
     rofi \
     terminus-font \
+    terminus-font-ll2-td1-otb \
     ttf-dejavu \
     ttf-font-awesome \
     ttf-roboto \
