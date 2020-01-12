@@ -31,3 +31,6 @@ yay -S --needed --noconfirm --removemake \
     xorg-apps \
     xorg-server \
     zenity
+
+yay -Yc --noconfirm
+yay -Sc --noconfirm
