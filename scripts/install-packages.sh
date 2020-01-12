@@ -3,6 +3,7 @@ source ./scripts/constants.sh
 echo "Installing packages"
 
 yay -S --needed --noconfirm \
+    evince \
     flameshot \
     google-chrome \
     gtk-engine-murrine \
@@ -23,6 +24,7 @@ yay -S --needed --noconfirm \
     ttf-dejavu \
     ttf-font-awesome \
     ttf-roboto \
+    vlc \
     xdg-user-dirs \
     xfce4 \
     xfce4-goodies \

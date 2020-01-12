@@ -2,7 +2,7 @@
 set $mod Mod4
 
 # Font
-font pango:Terminus Medium 9
+font pango:Terminus (TTF) 9
 
 # Layout toggle on CAPS
 exec setxkbmap -option grp:switch,grp:caps_toggle,grp_led:scroll us,ru

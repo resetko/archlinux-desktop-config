@@ -3,7 +3,7 @@
 rofi \
    -show run \
    -matching fuzzy \
-   -font "Terminus Medium 10" \
+   -font "Terminus (TTF) 10" \
    -width 40 \
    -hide-scrollbar \
    -bw 0 \
