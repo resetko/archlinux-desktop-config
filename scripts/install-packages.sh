@@ -20,7 +20,7 @@ yay -S --needed --noconfirm \
     terminus-font \
     ttf-dejavu \
     ttf-font-awesome \
-    ttf-google-fonts-git \
+    ttf-roboto \
     xdg-user-dirs \
     xfce4 \
     xfce4-goodies \
