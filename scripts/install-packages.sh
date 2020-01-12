@@ -2,7 +2,7 @@ source ./scripts/constants.sh
 
 echo "Installing packages"
 
-yay -S --needed --noconfirm \
+yay -S --needed --noconfirm --removemake \
     evince \
     flameshot \
     google-chrome \
