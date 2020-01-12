@@ -19,8 +19,8 @@ yay -S --needed --noconfirm --removemake \
     picom-git \
     polybar-git \
     rofi \
+    terminus-font-ttf \
     terminus-font \
-    terminus-font-ll2-td1-otb \
     ttf-dejavu \
     ttf-font-awesome \
     ttf-roboto \
