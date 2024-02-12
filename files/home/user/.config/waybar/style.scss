@@ -1,0 +1,169 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, 'Terminus (TTF)';
+    font-size: 12px;
+}
+
+label:focus {
+    background: magenta;
+    background-color: cyan;
+}
+
+window#waybar {
+    background-color: rgb(87, 87, 87);
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+
+    &.hidden {
+        opacity: 0.2;
+    }
+
+    &.termite {
+        background-color: #3F3F3F;
+    }
+
+    .chromium {
+        background-color: #000000;
+        border: none;
+    }
+}
+
+
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+
+    /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+    &:hover {
+        background: inherit;
+        box-shadow: inset 0 -3px #ffffff;
+    }
+}
+
+/* Widgets */
+
+.modules-right>widget>* {
+    padding: 0 10px;
+    margin-right: 5px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.modules-right>widget:last-child>* {
+    margin-right: 0;
+}
+
+/* Specific modules */
+
+#workspaces {
+    button {
+        padding: 0 5px;
+        background-color: transparent;
+        color: #ffffff;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        &.focused {
+            background-color: #64727D;
+            box-shadow: inset 0 -3px #ffffff;
+        }
+
+        &.urgent {
+            background-color: #eb4d4b;
+        }
+    }
+}
+
+#scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+
+    &.empty {
+        background-color: transparent;
+    }
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock {
+    color: inherit;
+}
+
+#battery {
+    color: inherit;
+
+    &.charging,
+    &.plugged {
+        color: #94caaa;
+    }
+
+    &.critical:not(.charging) {
+        color: #f53c3c;
+    }
+}
+
+#cpu {
+    color: inherit;
+}
+
+#memory {
+    color: inherit;
+}
+
+#disk {
+    color: inherit;
+}
+
+#backlight {
+    color: inherit;
+}
+
+#network {
+    color: inherit;
+
+    &.disconnected {
+        color: inherit;
+    }
+}
+
+#pulseaudio {
+    color: inherit;
+
+    &.muted {
+        color: inherit;
+    }
+}
+
+#temperature {
+    color: inherit;
+
+    &.critical {
+        color: #eb4d4b;
+    }
+}
+
+#language {
+    color: inherit;
+}
+
+#tray {
+    color: inherit;
+
+    &>.passive {
+        -gtk-icon-effect: dim;
+    }
+
+    &>.needs-attention {
+        -gtk-icon-effect: highlight;
+        background-color: #eb4d4b;
+    }
+}

@@ -1,0 +1,22 @@
+#! /bin/sh
+
+# force apps to use Wayland backend by default
+# export MOZ_ENABLE_WAYLAND=1
+# export QT_QPA_PLATFORM=wayland-egl
+# export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+# export QT_QPA_PLATFORMTHEME=qt5ct
+# export QT_STYLE_OVERRIDE=kvantum
+# export CLUTTER_BACKEND=wayland
+# export GDK_BACKEND=wayland
+# export ECORE_EVAS_ENGINE=wayland_egl
+# export ELM_ENGINE=wayland_wgl
+# export SDL_VIDEODRIVER=wayland
+# export _JAVA_AWT_WM_NONREPARENTING=1
+
+export XDG_CURRENT_DESKTOP=sway
+export GTK_THEME=Adwaita:dark
+export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+export QT_STYLE_OVERRIDE=adwaita-dark
+export PATH=$PATH:/home/$USER/.local/bin
+
+exec sway
